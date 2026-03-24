@@ -20,7 +20,7 @@ import { useGSAP } from "@gsap/react"
 // components && constants && etc... imports
 
 import { navLinks } from "../../constants"
-import Button from "../ui/button"
+import Button from "../ui/Button"
 
 
 
