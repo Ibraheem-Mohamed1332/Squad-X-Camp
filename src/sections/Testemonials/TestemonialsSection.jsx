@@ -28,7 +28,7 @@ const TestemonialsSection = () => {
             });
 
 
-            gsap.from("#testeCards > *",
+            gsap.from(".testeCard",
                 {
                     opacity: 0,
                     y: 300,
@@ -64,7 +64,7 @@ const TestemonialsSection = () => {
         <div className="flex gap-[2.125rem] justify-center">
             { 
                 testemonialsCardData.map(({name,review,img,main},i) => (
-                    <div className="w-fit h-fit rounded-3xl" key={i} id="testeCards">
+                    <div className="w-fit h-fit rounded-3xl testeCard" key={i}>
                         <TestemoinalsCard
                             name={name}
                             review={review}

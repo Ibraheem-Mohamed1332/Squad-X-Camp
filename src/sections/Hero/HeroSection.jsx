@@ -1,4 +1,4 @@
-import Button from "../../components/ui/button"
+import Button from "../../components/ui/Button"
 import { useRef, useState } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -24,7 +24,6 @@ const HeroSection = () => {
 
     const [isHovered, setIsHovered] = useState(false)
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-    const mobile = useMediaQuery({ query: '(min-width: 375px)' })
     const btnRef = useRef(null)
 
 

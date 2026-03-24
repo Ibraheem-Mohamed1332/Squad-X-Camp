@@ -31,7 +31,7 @@ const AboutUsSection = () => {
 
         // cards animation
 
-        gsap.from("#cardsContainer > #crd-0, #crd-1", {
+        gsap.from("#cardsContainer > #crd-0, #cardsContainer > #crd-1", {
             opacity: 0,
             y: 200,
             delay: 0.2,
@@ -45,7 +45,7 @@ const AboutUsSection = () => {
                 once: true,
             },
         });
-        gsap.from("#cardsContainer > #crd-2, #crd-3", {
+        gsap.from("#cardsContainer > #crd-2, #cardsContainer > #crd-3", {
             opacity: 0,
             y: 200,
             delay: 0.2,

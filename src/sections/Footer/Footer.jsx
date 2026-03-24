@@ -3,7 +3,7 @@ import fb from "../../assets/facebookIcon.svg"
 import ig from "../../assets/instagramIcon.svg"
 import tt from "../../assets/tiktokIcon.svg"
 import x from "../../assets/xIcon.svg"
-import Button from "../../components/ui/button"
+import Button from "../../components/ui/Button"
 import rightArrowWhite from "../../assets/rightArrowWhite.svg"
 import fromRightArrowBlack from "../../assets/formRightArrowBlack.svg"
 import { useGSAP } from "@gsap/react"
@@ -13,6 +13,7 @@ import gsap from "gsap"
 const Footer = () => {
 
     const date = new Date
+    const apiBaseUrl = import.meta.env.VITE_API_URL || "http://localhost:3000"
 
 
     // form handling
@@ -24,7 +25,7 @@ const Footer = () => {
     const email = formData.get("email");
 
     try {
-        const response = await fetch("http://localhost:3000/api/submit", {
+        const response = await fetch(`${apiBaseUrl}/api/submit`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
